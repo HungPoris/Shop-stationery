@@ -1,0 +1,95 @@
+/* style.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    flex-direction: column;
+}
+
+.container {
+    width: 100%;
+    max-width: 400px;
+    background-color: #ffffff;
+    border: 2px solid #92c4ec;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #92c4ec;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+    margin-top: 10px;
+    color: #555;
+}
+
+input[type="text"],
+input[type="password"] {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #92c4ec;
+    border-radius: 4px;
+    outline: none;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border-color: #659ec7;
+}
+
+.submit-btn {
+    margin-top: 20px;
+    padding: 12px;
+    border: none;
+    background-color: #92c4ec;
+    color: white;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background-color: #659ec7;
+}
+
+.action-link {
+    display: block;
+    text-align: center;
+    margin-top: 15px;
+    color: #92c4ec;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.action-link:hover {
+    color: #659ec7;
+}
+
+.footer {
+    text-align: center;
+    color: #92c4ec;
+    font-size: 0.9em;
+    margin-top: 10px;
+}
+
+.success-message {
+    text-align: center;
+    color: #28a745;
+    font-weight: bold;
+    font-size: 1.1em;
+    margin-top: 15px;
+}

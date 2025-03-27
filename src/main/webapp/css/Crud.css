@@ -1,0 +1,117 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+.header a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.right-side-bar {
+    position: fixed;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.red-dot {
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.add-symbol {
+    font-size: 24px;
+    color: #4CAF50;
+    cursor: pointer;
+}
+
+.title {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.add-new-button {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.add-new-button a {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.product-list {
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+.product-list table {
+    width: 100%;
+    border: 1px solid #ddd;
+}
+
+.product-list th, .product-list td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.product-list th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.product-list tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.product-list tr:hover {
+    background-color: #ddd;
+}
+
+.btn {
+    padding: 5px 10px;
+    margin: 2px;
+    text-decoration: none;
+    border-radius: 3px;
+    color: white;
+    text-align: center;
+}
+
+.btn-success {
+    background-color: #4CAF50;
+}
+
+.btn-danger {
+    background-color: #f44336;
+}
+
+.btn-custom-blue {
+    background-color: #2196F3;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+}

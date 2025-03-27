@@ -1,0 +1,156 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Oct 25, 2024, 9:18:33 PM
+    Author     : conkg
+*/
+.category-list {
+    list-style-type: none; /* Remove default bullet points */
+    padding: 0; /* Remove default padding */
+}
+
+.category-list > .dropdown {
+    margin: 10px 0; /* Chỉ áp dụng cho danh mục chính */
+}
+
+.category-list a {
+    display: block; /* Make the link a block element for better click area */
+    padding: 10px 15px; /* Add padding for clickable area */
+    background-color: #f8f9fa; /* Light background color */
+    color: #333; /* Text color */
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s, color 0.3s; /* Smooth background and color transition */
+}
+
+.category-list a:hover {
+    background-color: #007bff; /* Change background on hover */
+    color: white; /* Change text color on hover */
+}
+
+.category-list a.active {
+    background-color: #007bff; /* Active background color */
+    color: white; /* Active text color */
+    font-weight: bold; /* Make active text bold */
+}
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    list-style-type: none;
+    padding: 0;
+}
+
+.pagination a, .pagination span {
+    margin: 0 5px;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #007bff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.pagination a:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+.pagination span {
+    font-weight: bold;
+    background-color: #007bff;
+    color: white;
+}
+
+.pagination a:active {
+    background-color: #0056b3;
+    color: white;
+}
+
+.pagination a.disabled, .pagination span.disabled {
+    color: #aaa;
+    pointer-events: none;
+    cursor: default;
+}
+
+.category-list {
+    list-style: none;
+    padding: 0;
+}
+
+.category-list .dropdown {
+    position: relative;
+    display: block;
+}
+
+.category-list .dropdown a {
+    display: block;
+    padding: 8px;
+    text-decoration: none;
+    color: #333;
+}
+
+.sub-category-list {
+    display: none;
+    position: absolute;
+    left: 100%;
+    top: 0;
+    background: white;
+    list-style: none;
+    padding: 0;
+    min-width: 150px;
+    border: 1px solid #ccc;
+    z-index: 10;
+}
+
+.category-list .dropdown:hover .sub-category-list {
+    display: block;
+}
+
+.advanced-filter {
+    background-color: #f8f9fa;
+    display: none;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    margin: 0 auto;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.checkbox-group {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(200px, 1fr)); /* Tự điều chỉnh số cột */
+    gap: 12px;
+    padding: 10px 0;
+}
+
+.checkbox-group label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.checkbox-group input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+}
+
+.advanced-filter {
+    display: none;
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f8f9fa;
+    margin-bottom: 15px;
+    transition: all 0.3s ease-in-out;
+}
+
+.advanced-filter.show {
+    display: block !important;
+}

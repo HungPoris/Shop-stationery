@@ -1,0 +1,136 @@
+/* Reset CSS */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    background: white;
+    padding: 20px;
+    height: 100vh;
+    border-right: 1px solid #ddd;
+}
+
+.sidebar h5 {
+    font-weight: bold;
+}
+
+.sidebar ul {
+    padding: 0;
+}
+
+.sidebar ul li {
+    list-style: none;
+    margin: 10px 0;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+.sidebar ul li a:hover,
+.sidebar ul li a.text-danger {
+    background-color: #ffefe6;
+    color: #ee4d2d;
+    font-weight: bold;
+}
+
+/* Content */
+.content {
+    flex: 1;
+    padding: 20px;
+}
+
+.nav-tabs .nav-link {
+    background-color: #e0e0e0 !important;
+    border: #666 1.5px solid !important;
+    color: #000;
+}
+
+.nav-tabs .nav-link:hover {
+    background-color: #3498db !important;
+    border: #666 1.5px solid !important;
+    color: #000;
+}
+
+/* Đơn hàng trống */
+.order-empty {
+    text-align: center;
+    padding: 50px;
+    background: white;
+    border-radius: 10px;
+}
+
+.order-empty img {
+    width: 100px;
+}
+
+.order-item {
+    background: white;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+td[colspan="9"] {
+    padding: 0 !important;
+}
+
+table{
+    margin: 0 !important;
+}
+
+.custom-table-wrapper {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+
+.table-secondary th, .table-secondary td, .table-secondary tr {
+    background-color: #f2f2f2 !important;
+}
+
+.table th,
+.table tbody td {
+    border: none !important;
+}
+
+.table tbody td {
+    border-bottom: 2px solid #dee2e6 !important;
+}
+
+.custom-table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+.custom-table th, .custom-table td {
+    padding: 10px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.custom-table img {
+    max-width: 70px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.custom-table .price-column {
+    font-weight: bold;
+    color: #d9534f;
+}
+
+.custom-table tfoot td {
+    font-weight: bold;
+}

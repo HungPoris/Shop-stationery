@@ -1,0 +1,115 @@
+body, h2, p {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa; /* Light background color */
+    color: #343a40; /* Dark text color */
+}
+
+/* Header styles */
+.header {
+    background-color: #007bff; /* Bootstrap primary color */
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-child a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    transition: background 0.3s;
+}
+
+.header-child a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Title styles */
+.title {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.title h2 {
+    font-size: 2rem;
+    color: #007bff; /* Match header color */
+}
+
+/* Form container */
+.form-container {
+    max-width: 600px; /* Limit form width */
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Add shadow */
+    padding: 20px; /* Inner padding */
+}
+
+/* Table styles */
+table {
+    width: 100%; /* Full width */
+    margin: 20px 0;
+    border-collapse: collapse; /* Collapse borders */
+}
+
+td {
+    padding: 10px; /* Add padding */
+    border: 1px solid #dee2e6; /* Light border color */
+}
+
+label {
+    font-weight: bold; /* Bold labels */
+}
+
+input[type="text"],
+input[type="number"],
+input[type="date"],
+textarea,
+select {
+    width: calc(100% - 20px); /* Full width minus padding */
+    padding: 10px; /* Inner padding */
+    border: 1px solid #ced4da; /* Light border */
+    border-radius: 4px; /* Rounded corners */
+    font-size: 1rem; /* Standard font size */
+}
+
+/* Button styles */
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px; /* Space above buttons */
+}
+
+.btn {
+    padding: 10px 15px; /* Button padding */
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer; /* Pointer on hover */
+    transition: background 0.3s;
+}
+
+.btn-primary {
+    background-color: #007bff; /* Primary color */
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+.btn-danger {
+    background-color: #dc3545; /* Danger color */
+    color: white;
+}
+
+.btn-danger:hover {
+    background-color: #c82333; /* Darker shade on hover */
+}

@@ -1,0 +1,387 @@
+
+
+* {
+    font-family: sans-serif,Arial, Helvetica ;
+    box-sizing: border-box;
+}
+
+
+
+a{
+    text-decoration: none;
+}
+
+.jumpToTop{
+    position: fixed;
+    right: 5%;
+    bottom: 10%;
+    z-index: 3;
+}
+
+.jumpToTop i{
+    font-size: xx-large;
+}
+#mobile-bottom-navigation{
+    background-color: #92c4ec;
+}
+
+.mobile-quick-link{
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+    margin-top: 3%;
+    color: white;
+}
+
+.mobile-quick-link i{
+    display: block;
+    color: white;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+header{
+    margin-bottom: 1%;
+}
+
+i{
+    color: #92c4ec;
+}
+
+/* Styling for the header-topbar */
+.header-topbar {
+    background-color: #92c4ec; /* Background color */
+    color: white; /* Text color */
+    padding: 10px 0; /* Padding for top and bottom */
+    font-family: Arial, sans-serif;
+}
+
+.header-topbar .title-content {
+    font-size: 1.5em; /* Increase title size */
+    font-weight: bold; /* Make it bold */
+}
+
+.header-topbar .account {
+    text-align: right;
+}
+
+.header-topbar .account .link {
+    color: white; /* White color for account links */
+    text-decoration: none;
+    padding: 0 10px; /* Padding around the link */
+}
+
+.header-topbar .account .link:hover {
+    color: #ddd; /* Slightly lighter color on hover */
+}
+
+.header-topbar .account-icon {
+    font-size: 1.2em; /* Slightly larger icon */
+    margin-right: 5px; /* Space between icon and text */
+    color: white; /* Gold color for icon */
+}
+
+.header-topbar .account-icon i{
+    color:white;
+}
+
+.mobile-navigation{
+    display: block;
+}
+
+.mobile-navigation>a{
+    display: block;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.mobile-navigation>a>i{
+    font-size: xx-large;
+    display: block;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.offcanvas {
+    max-width: calc(4/12 * 100%);
+    background-color: #92c4ec;
+}
+
+
+.offcanvas-header .btn-close{
+    font-size: 1em;
+}
+
+.offcanvas-body {
+    font-size: 1em;
+}
+.offcanvas-body>ul>li{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.offcanvas-body>ul>li:hover{
+    background-color: #429ee9;
+}
+
+.offcanvas-body .nav-link{
+    color: white;
+}
+#sub-menu .nav-item{
+    padding-left: 10%;
+    color: rgb(0, 0, 0);
+}
+
+#sub-menu>li:not(:nth-last-child(2)):hover{
+    background-color: #429ee9;
+}
+
+.header-midbar{
+    padding-top: 1%;
+    background-color: rgb(243, 245, 245);
+}
+
+
+
+.header-logo h1{
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.logo-content{
+    display: flex;
+}
+
+.slogan{
+    padding-left: 1%;
+    color: black;
+    font-size: medium;
+}
+
+.header-search{
+    margin-top: 1%;
+    margin-bottom: 3%;
+}
+
+.search-form{
+    width: 66.67%;
+    margin: 0 auto;
+    border: 1px solid #92c4ec;
+    border-radius: 10px;
+    background-color:#92c4ec ;
+    overflow: hidden;
+    display: flex;
+}
+#search{
+    width: 90%;
+    border-style: none;
+
+}
+
+.search-btn{
+    background-color:#92c4ec ;
+    width: 10%;
+    padding: 0;
+    border-style: none;
+}
+
+.search-btn i{
+    color: white;
+}
+
+
+.cart-brief-content{
+    overflow: hidden;
+}
+
+.link-to-cart{
+    display: flex;
+    gap: 1%;
+    width: 100%;
+}
+
+.cart-more-info{
+    font-size: large;
+    color: black;
+}
+.cart-icon-detail{
+    display: block;
+}
+.display_cart_quantity{
+    display: inline;
+}
+
+.cart-content{
+
+    display: none;
+    font-size: 1em;
+    box-shadow: 1px 1px #BEBEBE;
+
+}
+
+.cart-content .book-info{
+    font-size: 0.9em;
+}
+
+.cart-container-header {
+    margin: auto;
+    padding: 5px;
+}
+
+
+.cart-content img{
+    height: 70%;
+}
+
+.pay-custom-header {
+    width: 100%;
+    text-align: center;
+}
+.pay-custom-header button {
+    background-color: #65ace5;
+    width: 100%;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+.pay-custom-header button:hover {
+    background-color: #429ee9;
+}
+
+@media only screen and (min-width: 768px) {
+
+    .cart-brief-content:hover + .cart-content,.cart-content:hover{
+        background-color: white;
+        width: 20vw;
+        display: block;
+        position: fixed;
+        right:7%;
+        top:15%;
+        z-index: 10;
+        border: 1px solid rgba(0, 0, 0, 0.205);
+    }
+}
+
+.header-navbar-main{
+    padding-top: 1%;
+    border: 1px solid rgb(213, 215, 215);
+    border-top: none;
+
+}
+
+
+
+.nav-item .active{
+    border: 1px solid #92c4ec;
+    border-radius: 10px;
+    background-color:#92c4ec;
+    color: white;
+}
+
+.nav-link{
+    color: black;
+}
+
+.dropdown-menu{
+    text-align: left;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.dropdown-item:hover{
+    color: palevioletred;
+}
+
+footer{
+    width: 100%;
+    background-color: #313131;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 0px !important;
+}
+
+.footer-detail{
+    padding-top:3%;
+}
+
+footer a:hover{
+    color: #92c4ec;
+}
+
+footer a>p:hover{
+    color: #92c4ec;
+}
+
+#footer-slogan{
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.contact-content{
+    display: flex;
+}
+
+.contact-text{
+    padding-left: 3%;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: small;
+}
+
+.policy-service-title{
+    font-size: small;
+}
+
+.policy-service-text{
+    font-size: xx-small;
+    color:rgba(255, 255, 255, 0.8);
+    ;
+    line-height: 10vh;
+    display: block;
+}
+
+@media only screen and (min-width:576px) {
+
+    .policy-service-text{
+        line-height: 5vh;
+        font-size: smaller;
+    }
+}
+
+
+.social-media{
+    margin-bottom: 3vh;
+}
+
+.fb-page{
+    width: 100%;
+}
+
+.social-media-others p{
+    margin-bottom: 0;
+    margin-top: 1rem;
+}
+
+.social-media-icon {
+    display: flex;
+    gap: 5%;
+}
+
+.icon-container {
+    border: 1px solid white;
+    border-radius: 3px;
+    border: none;
+    background-color: white;
+    width: 10%;
+}
+
+.icon-container:hover{
+    background-color: #92c4ec;
+}
+
+.social-media-icon .icon-container a{
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.icon-container a i{
+    color: #313131;
+
+}
